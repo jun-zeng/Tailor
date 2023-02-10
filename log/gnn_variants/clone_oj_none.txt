@@ -1,0 +1,90 @@
+2022-02-20 14:09:42,083 |   INFO | Loading data from oj_clone_encoding
+2022-02-20 14:09:43,051 |   INFO | Extracting statements
+2022-02-20 14:09:44,862 |   INFO | Extracting interactions
+2022-02-20 14:09:50,360 |  DEBUG | CPG statistics
+2022-02-20 14:09:50,360 |  DEBUG | [n_typetoken, n_entity, n_stat, n_relation] = [3732, 246363, 242272, 8]
+2022-02-20 14:09:50,360 |  DEBUG | [n_triple, n_inter] = [1005433, 1148858]
+2022-02-20 14:09:50,360 |  DEBUG | [n_ast, n_cfg, n_pdg] = [593110, 339805, 215943]
+2022-02-20 14:09:50,360 |  DEBUG | [max n_entity for a statement] = [161]
+2022-02-20 14:09:50,360 |   INFO | Parsing code clone/classification dataset
+2022-02-20 14:09:50,360 | WARNING | Extract only the first 15 functionalities from ojclone dataset
+2022-02-20 14:09:50,360 |  DEBUG | The total number of clone functions: 7500
+2022-02-20 14:09:50,848 |   INFO | Converting interactions into sparse adjacency matrix
+2022-02-20 14:09:51,017 |   INFO | Generating normalized sparse adjacency matrix
+2022-02-20 14:09:51,224 |   INFO | Generating code clone training, validation, and testing sets
+2022-02-20 14:10:01,705 |  DEBUG | Code Clone [n_train, n_val, n_test] = [255840, 31980, 31980]
+2022-02-20 14:10:01,706 |   INFO | Initing type/token embeddings with word2vec
+2022-02-20 14:10:08,916 |   INFO | Initing Oaktree model
+2022-02-20 14:10:08,924 |   INFO | Finish building inputs for SGL
+2022-02-20 14:10:09,387 |   INFO | Init entity embeddings with pre-trained word2vec embeddings
+2022-02-20 14:10:09,401 |   INFO | Finish building weights for SGL
+2022-02-20 14:10:09,401 | WARNING | No use of GNN
+2022-02-20 14:10:09,401 |   INFO | Finish building model for GNN
+2022-02-20 14:10:09,974 |   INFO | Finish building loss for code clone
+2022-02-20 14:10:09,975 |  DEBUG | Variable name: entity_embedding Shape: 7883648
+2022-02-20 14:10:09,975 |  DEBUG | Variable name: w_clone Shape: 32
+2022-02-20 14:10:09,975 |  DEBUG | Variable name: b_clone Shape: 1
+2022-02-20 14:10:09,975 |  DEBUG | oaktree_si_none has 7883681 parameters
+2022-02-20 14:10:09,975 |   INFO | Setup tensorflow session
+2022-02-20 14:10:11,180 |   INFO | Training 30 epochs
+2022-02-20 14:11:34,248 |  DEBUG | Epoch 1 [83.1s]: train[lr=0.10000]=[(clone: 120.00914)]
+2022-02-20 14:11:44,866 |   INFO | Clone Validation: [rec, pre, f1, auc]==[0.000000, 0.000000, 0.000000, 0.775871]
+2022-02-20 14:13:07,342 |  DEBUG | Epoch 2 [82.5s]: train[lr=0.10000]=[(clone: 103.10408)]
+2022-02-20 14:13:17,765 |   INFO | Clone Validation: [rec, pre, f1, auc]==[0.000000, 0.000000, 0.000000, 0.789242]
+2022-02-20 14:14:39,478 |  DEBUG | Epoch 3 [81.7s]: train[lr=0.10000]=[(clone: 101.06051)]
+2022-02-20 14:14:49,884 |   INFO | Clone Validation: [rec, pre, f1, auc]==[0.000000, 0.000000, 0.000000, 0.799456]
+2022-02-20 14:16:10,506 |  DEBUG | Epoch 4 [80.6s]: train[lr=0.10000]=[(clone: 99.38693)]
+2022-02-20 14:16:20,914 |   INFO | Clone Validation: [rec, pre, f1, auc]==[0.000000, 0.000000, 0.000000, 0.807172]
+2022-02-20 14:17:41,622 |  DEBUG | Epoch 5 [80.7s]: train[lr=0.10000]=[(clone: 98.01751)]
+2022-02-20 14:17:52,050 |   INFO | Clone Validation: [rec, pre, f1, auc]==[0.000000, 0.000000, 0.000000, 0.813447]
+2022-02-20 14:19:12,628 |  DEBUG | Epoch 6 [80.6s]: train[lr=0.10000]=[(clone: 96.95451)]
+2022-02-20 14:19:23,028 |   INFO | Clone Validation: [rec, pre, f1, auc]==[0.000000, 0.000000, 0.000000, 0.818244]
+2022-02-20 14:20:44,032 |  DEBUG | Epoch 7 [81.0s]: train[lr=0.10000]=[(clone: 96.12210)]
+2022-02-20 14:20:54,737 |   INFO | Clone Validation: [rec, pre, f1, auc]==[0.000000, 0.000000, 0.000000, 0.822329]
+2022-02-20 14:22:17,260 |  DEBUG | Epoch 8 [82.5s]: train[lr=0.10000]=[(clone: 95.43914)]
+2022-02-20 14:22:27,867 |   INFO | Clone Validation: [rec, pre, f1, auc]==[0.000000, 0.000000, 0.000000, 0.825553]
+2022-02-20 14:23:49,641 |  DEBUG | Epoch 9 [81.8s]: train[lr=0.10000]=[(clone: 94.95631)]
+2022-02-20 14:24:00,102 |   INFO | Clone Validation: [rec, pre, f1, auc]==[0.000000, 0.000000, 0.000000, 0.827693]
+2022-02-20 14:25:21,045 |  DEBUG | Epoch 10 [80.9s]: train[lr=0.10000]=[(clone: 94.57587)]
+2022-02-20 14:25:31,469 |   INFO | Clone Validation: [rec, pre, f1, auc]==[0.000000, 0.000000, 0.000000, 0.829410]
+2022-02-20 14:26:53,557 |  DEBUG | Epoch 11 [82.1s]: train[lr=0.10000]=[(clone: 94.32672)]
+2022-02-20 14:27:04,314 |   INFO | Clone Validation: [rec, pre, f1, auc]==[0.000000, 0.000000, 0.000000, 0.830421]
+2022-02-20 14:28:25,523 |  DEBUG | Epoch 12 [81.2s]: train[lr=0.10000]=[(clone: 94.12781)]
+2022-02-20 14:28:35,988 |   INFO | Clone Validation: [rec, pre, f1, auc]==[0.000000, 0.000000, 0.000000, 0.831327]
+2022-02-20 14:29:55,916 |  DEBUG | Epoch 13 [79.9s]: train[lr=0.10000]=[(clone: 93.97255)]
+2022-02-20 14:30:06,334 |   INFO | Clone Validation: [rec, pre, f1, auc]==[0.000000, 0.000000, 0.000000, 0.831837]
+2022-02-20 14:31:27,277 |  DEBUG | Epoch 14 [80.9s]: train[lr=0.10000]=[(clone: 93.89150)]
+2022-02-20 14:31:37,842 |   INFO | Clone Validation: [rec, pre, f1, auc]==[0.000000, 0.000000, 0.000000, 0.832373]
+2022-02-20 14:32:58,850 |  DEBUG | Epoch 15 [81.0s]: train[lr=0.10000]=[(clone: 93.81563)]
+2022-02-20 14:33:09,402 |   INFO | Clone Validation: [rec, pre, f1, auc]==[0.000000, 0.000000, 0.000000, 0.832620]
+2022-02-20 14:34:30,924 |  DEBUG | Epoch 16 [81.5s]: train[lr=0.10000]=[(clone: 93.76034)]
+2022-02-20 14:34:41,516 |   INFO | Clone Validation: [rec, pre, f1, auc]==[0.000000, 0.000000, 0.000000, 0.832875]
+2022-02-20 14:36:01,894 |  DEBUG | Epoch 17 [80.4s]: train[lr=0.01000]=[(clone: 93.72961)]
+2022-02-20 14:36:12,272 |   INFO | Clone Validation: [rec, pre, f1, auc]==[0.000000, 0.000000, 0.000000, 0.833081]
+2022-02-20 14:37:33,435 |  DEBUG | Epoch 18 [81.2s]: train[lr=0.01000]=[(clone: 93.69541)]
+2022-02-20 14:37:43,988 |   INFO | Clone Validation: [rec, pre, f1, auc]==[0.000000, 0.000000, 0.000000, 0.833207]
+2022-02-20 14:39:04,672 |  DEBUG | Epoch 19 [80.7s]: train[lr=0.01000]=[(clone: 93.68356)]
+2022-02-20 14:39:15,139 |   INFO | Clone Validation: [rec, pre, f1, auc]==[0.000000, 0.000000, 0.000000, 0.833295]
+2022-02-20 14:40:37,020 |  DEBUG | Epoch 20 [81.9s]: train[lr=0.01000]=[(clone: 93.67706)]
+2022-02-20 14:40:47,495 |   INFO | Clone Validation: [rec, pre, f1, auc]==[0.000000, 0.000000, 0.000000, 0.833472]
+2022-02-20 14:42:08,483 |  DEBUG | Epoch 21 [81.0s]: train[lr=0.01000]=[(clone: 93.66419)]
+2022-02-20 14:42:19,091 |   INFO | Clone Validation: [rec, pre, f1, auc]==[0.000000, 0.000000, 0.000000, 0.833463]
+2022-02-20 14:43:41,854 |  DEBUG | Epoch 22 [82.8s]: train[lr=0.01000]=[(clone: 93.63172)]
+2022-02-20 14:43:52,464 |   INFO | Clone Validation: [rec, pre, f1, auc]==[0.000000, 0.000000, 0.000000, 0.833462]
+2022-02-20 14:45:15,652 |  DEBUG | Epoch 23 [83.2s]: train[lr=0.01000]=[(clone: 93.63171)]
+2022-02-20 14:45:26,381 |   INFO | Clone Validation: [rec, pre, f1, auc]==[0.000000, 0.000000, 0.000000, 0.833494]
+2022-02-20 14:46:46,566 |  DEBUG | Epoch 24 [80.2s]: train[lr=0.01000]=[(clone: 93.63297)]
+2022-02-20 14:46:57,021 |   INFO | Clone Validation: [rec, pre, f1, auc]==[0.000000, 0.000000, 0.000000, 0.833571]
+2022-02-20 14:48:17,650 |  DEBUG | Epoch 25 [80.6s]: train[lr=0.01000]=[(clone: 93.61986)]
+2022-02-20 14:48:27,999 |   INFO | Clone Validation: [rec, pre, f1, auc]==[0.000000, 0.000000, 0.000000, 0.833538]
+2022-02-20 14:49:48,805 |  DEBUG | Epoch 26 [80.8s]: train[lr=0.01000]=[(clone: 93.61226)]
+2022-02-20 14:49:59,303 |   INFO | Clone Validation: [rec, pre, f1, auc]==[0.000000, 0.000000, 0.000000, 0.833572]
+2022-02-20 14:51:19,248 |  DEBUG | Epoch 27 [79.9s]: train[lr=0.01000]=[(clone: 93.61357)]
+2022-02-20 14:51:29,655 |   INFO | Clone Validation: [rec, pre, f1, auc]==[0.000000, 0.000000, 0.000000, 0.833541]
+2022-02-20 14:52:51,344 |  DEBUG | Epoch 28 [81.7s]: train[lr=0.01000]=[(clone: 93.60844)]
+2022-02-20 14:53:01,835 |   INFO | Clone Validation: [rec, pre, f1, auc]==[0.000000, 0.000000, 0.000000, 0.833556]
+2022-02-20 14:54:23,312 |  DEBUG | Epoch 29 [81.5s]: train[lr=0.01000]=[(clone: 93.62805)]
+2022-02-20 14:54:34,090 |   INFO | Clone Validation: [rec, pre, f1, auc]==[0.000000, 0.000000, 0.000000, 0.833481]
+2022-02-20 14:55:55,506 |  DEBUG | Epoch 30 [81.4s]: train[lr=0.01000]=[(clone: 93.61239)]
+2022-02-20 14:56:05,870 |   INFO | Clone Validation: [rec, pre, f1, auc]==[0.000000, 0.000000, 0.000000, 0.833602]
+2022-02-20 14:56:16,433 |   INFO | Clone Test: [rec, pre, f1, auc]==[0.000505, 1.000000, 0.001010, 0.825493]

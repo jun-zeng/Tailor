@@ -1,0 +1,1 @@
+This folder will be used to store training logs of CPGNN.
