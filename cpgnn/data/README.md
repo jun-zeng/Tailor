@@ -1,7 +1,8 @@
 ## Training Data
 We have prepared training data of the OJClone and BigCloneBench
-datasets. Please download them with the following link: https://drive.google.com/drive/folders/1hd7XXrDccl63viEULs9XKVBGi1GcIlQp?usp=sharing
-
+datasets. Please download them with the following link:
+https://drive.google.com/file/d/1sQuMFwuelufxoP3_iAbpYO2rfdc3OzPU/edit,
+https://drive.google.com/file/d/1u9s4K43NluxFMVLKoqFoLVJIKRIANuA2/edit, https://drive.google.com/file/d/1AQmGqxsMavWbd0fkphHRNr-nXic9wcj8/edit.
 
 ## Introduction
 Input encodings for machine learning models:

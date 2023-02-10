@@ -59,7 +59,7 @@ all the dependencies so you can reproduce the results easily.
 * Compile Cython: `cd cpgnn && python setup.py build_ext --inplace`
 
 # Status
-We apply for the functional, available, and reproduced badges in this artifact evaluation. 
+We apply for the functional and available badges in this artifact evaluation. 
 To receive these badges, we have publicly released all the source code and data of Tailor.
 Besides, we have documented step-to-step guidance to run experiments and reproduce results reported in our paper. 
 We have also prepared a docker image to set up our experimental environment.
@@ -213,7 +213,7 @@ Tailor is released under the [GPL-3.0 license](https://www.gnu.org/licenses/gpl-
 # Publication
 Please consider to cite our paper if you use the code in your research project.
 ```
-@inproceedings{Tailor22ICSE,
+@inproceedings{Tailor23ICSE,
   author    = {Jiahao Liu and
                Jun Zeng and
                Xia Wang and
